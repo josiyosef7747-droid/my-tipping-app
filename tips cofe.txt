@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Send a Tip</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white flex items-center justify-center min-h-screen">
+  <div class="bg-slate-800 p-8 rounded-xl w-full max-w-md shadow-2xl border border-slate-700">
+    <h2 class="text-2xl font-bold mb-4 text-center">Support the Streamer</h2>
+    <form id="tipForm" class="space-y-4">
+      <div>
+        <label class="block text-sm mb-1">Your Name / Handle</label>
+        <input type="text" id="username" required class="w-full p-3 rounded bg-slate-700 text-white focus:ring-2 focus:ring-indigo-500 outline-none" placeholder="e.g. Alex">
+      </div>
+      <div>
+        <label class="block text-sm mb-1">Tip Amount ($)</label>
+        <input type="number" id="amount" required class="w-full p-3 rounded bg-slate-700 text-white focus:ring-2 focus:ring-indigo-500 outline-none" placeholder="5">
+      </div>
+      <div>
+        <label class="block text-sm mb-1">Message / Shoutout</label>
+        <textarea id="message" rows="3" class="w-full p-3 rounded bg-slate-700 text-white focus:ring-2 focus:ring-indigo-500 outline-none" placeholder="Great stream!"></textarea>
+      </div>
+      <button type="submit" class="w-full py-3 bg-indigo-600 hover:bg-indigo-500 rounded font-bold transition">Send Tip</button>
+    </form>
+  </div>
+</body>
+</html>
